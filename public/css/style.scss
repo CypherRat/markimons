@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Poppins:wght@100;400;600;700;900&family=Quicksand&family=Raleway&display=swap");
+// Color Codes
+$background-main: #8c59f8;
+$background-dark: #733aea;
+$text-accent: #d9d9d9;
+$text-dark: #7d48ee;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+  position: absolute;
+  content: "";
+}
+body {
+  background-color: $background-main;
+  background-color: #1400fb;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pre_loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  overflow: hidden;
+  perspective: 50vmin;
+  background-size: 100vw 100vh;
+  background-image: radial-gradient(#0000, #673ab72e),
+    linear-gradient(-90deg, #2000587d, #000, #9c27b02b),
+    linear-gradient(0deg, #ff98002e, #000, #8bc34a5e);
+  background-color: #1c1c1c;
+  box-shadow: 0 0 150vmin 11vmin #000 inset;
+
+  &:before {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(#0000, #0a123a),
+      linear-gradient(180deg, #2000587d, #000, #9c27b02b),
+      linear-gradient(0deg, #ff980054, #000, #009688ba);
+  }
+}
+.wrap {
+  text-align: center;
+  color: $text-accent;
+
+  h1 {
+    margin-top: 50px;
+    animation: plug 250ms linear infinite;
+    transition: animation ease-in;
+    padding: 50px;
+    font-family: "Covered By Your Grace", cursive;
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+}
+
+@keyframes plug {
+  100% {
+    color: $text-dark;
+  }
+}
