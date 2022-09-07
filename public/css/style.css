@@ -88,7 +88,7 @@ body {
   font-family: "Covered By Your Grace", cursive;
   letter-spacing: 2px;
   line-height: 1.5;
-  text-shadow: 0 2px 2px rgba(0,0,0,0.18);
+  text-shadow: 0 2px 2px #f2f2f2;
 }
 
 @-webkit-keyframes plug {
